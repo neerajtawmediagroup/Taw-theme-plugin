@@ -1,0 +1,316 @@
+/* Layout for dashboard */
+.taw-theme-dashboard-wrap {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left panel */
+/* Card container */
+.taw-re-left-panel {
+    width: 220px;
+}
+
+.taw-re-left-panel__inner {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    padding: 14px 0;
+}
+
+/* List base */
+.taw-re-left-panel__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+}
+
+/* Main items (Dashboard, Real Estate, Testimonials) */
+.taw-re-left-panel__item a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    color: #1d2327;
+    text-decoration: none;
+}
+
+.taw-re-left-panel__item a:hover {
+    background: #f0f0f1;
+}
+
+/* Sub items (All Listing, Manage View, Categories) */
+.taw-re-left-panel__subitem a {
+    display: block;
+    padding: 3px 16px 3px 40px; /* left indent */
+    color: #1d2327;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.taw-re-left-panel__subitem a:hover {
+    background: #f0f0f1;
+}
+
+.widefat a{
+font-weight: 600;
+pointer-events: pointer;
+}
+
+/* Icons */
+.taw-re-left-panel__icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Active state (blue text) */
+.taw-re-left-panel__item.is-active > a .taw-re-left-panel__text,
+.taw-re-left-panel__item.is-active > a .taw-re-left-panel__icon,
+.taw-re-left-panel__subitem.is-active > a {
+    color: #2271b1;
+    font-weight: 600;
+}
+
+/* Right side */
+.taw-theme-dashboard-main {
+    flex: 1;
+}
+
+/* Cards on right */
+.taw-dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.taw-dashboard-card {
+    flex: 1 1 280px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+	padding: 20px;
+}
+
+/* ===== Add Property Page (custom layout) ===== */
+/* Overall page background + spacing */
+.taw-add-property-page {
+	background: #f4f5f7;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.taw-add-property-page .taw-theme-dashboard-main {
+	padding-top: 0;
+	max-width: none; /* allow full-width on the right side */
+}
+
+/* Card-like sections (match soft cards in design) */
+.taw-add-property-page .taw-re-panel {
+	background: #ffffff;
+	border-radius: 8px;
+	margin-top: 20px;
+	border: 1px solid #e3e5ea;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.taw-add-property-page .taw-re-panel:first-of-type {
+	margin-top: 12px;
+}
+
+.taw-add-property-page .taw-add-section-title {
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0;
+	color: #4b5563;
+	padding: 10px 16px;
+	border-bottom: 1px solid #e5e7eb;
+	background: #f7f7f9;
+}
+
+/* Stack sections instead of tabs on custom add page */
+.taw-add-property-page .taw-re-settings {
+	display: block;
+}
+
+.taw-add-property-page .taw-re-sidebar {
+	display: none;
+}
+
+.taw-add-property-page .taw-re-main {
+	padding: 16px 20px 16px;
+}
+
+.taw-add-property-page .taw-re-tabs-content .taw-re-tab {
+	display: block;
+	margin-bottom: 24px;
+}
+
+.taw-add-property-page .taw-re-tabs-content .taw-re-tab:last-child {
+	margin-bottom: 0;
+}
+
+.taw-add-property-page .taw-re-media-preview {
+	margin-top: 12px;
+}
+
+/* Inputs / controls (soft rounded, light background) */
+.taw-add-property-page input[type="text"],
+.taw-add-property-page input[type="number"],
+.taw-add-property-page textarea,
+.taw-add-property-page select {
+	border-radius: 6px;
+	border: 1px solid #d5d7de;
+	background: #f9fafb;
+	box-shadow: inset 0 0 0 1px transparent;
+}
+
+.taw-add-property-page input[type="text"]:focus,
+.taw-add-property-page input[type="number"]:focus,
+.taw-add-property-page textarea:focus,
+.taw-add-property-page select:focus {
+	background: #ffffff;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 1px #2563eb;
+}
+
+.taw-add-property-page textarea {
+	min-height: 120px;
+}
+
+/* Number stepper buttons */
+.taw-add-property-page .taw-number-input-wrapper {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.taw-add-property-page .taw-number-btn {
+	border-radius: 999px;
+	width: 28px;
+	height: 28px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #f3f4f6;
+	border: 1px solid #d5d7de;
+}
+
+.taw-add-property-page .taw-number-btn:hover {
+	background: #e5e7eb;
+}
+
+/* Gallery preview spacing */
+.taw-add-property-page .taw-re-media-preview .taw-re-media-item {
+	background: #f9fafb;
+}
+
+/* ===== Add Shortcode Page ===== */
+.taw-add-shortcode-page .taw-theme-dashboard-main {
+	padding-top: 0;
+}
+
+.taw-shortcode-layout {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+
+.taw-shortcode-main {
+	flex: 1 1 auto;
+}
+
+.taw-shortcode-side {
+	flex: 0 0 320px;
+}
+
+/* ===== Real Estate List (Full Listings) ===== */
+.taw-re-list-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 16px;
+}
+
+.taw-re-page-title {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.taw-re-status-filters {
+	margin-top: 4px;
+	font-size: 13px;
+}
+
+.taw-re-status-filters a {
+	color: #50575e;
+	text-decoration: none;
+}
+
+.taw-re-status-filters a.current {
+	color: #2271b1;
+	font-weight: 600;
+}
+
+.taw-re-status-filters .count {
+	color: #6c7781;
+}
+
+.taw-re-header-actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.taw-re-search-form {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.taw-re-search-input {
+	padding: 6px 10px;
+	min-width: 220px;
+}
+
+.taw-re-add-new {
+	margin-left: 4px;
+}
+
+.taw-re-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 10px;
+	padding: 8px 0;
+	border-top: 1px solid #dcdcde;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.taw-re-toolbar-left {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+}
+
+.taw-re-bulk-select,
+.taw-re-filter-select {
+	min-width: 120px;
+}
+
+.taw-re-items-count {
+	color: #6c7781;
+}
+
+.taw-re-list-table th,
+.taw-re-list-table td {
+	vertical-align: middle;
+}
+
+.taw-re-list-table .check-column {
+	text-align: center;
+}

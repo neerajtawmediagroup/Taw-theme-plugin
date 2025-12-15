@@ -1,0 +1,45 @@
+.taw-testimonials {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 24px;
+}
+
+.taw-testimonial-item {
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+	padding: 20px;
+	/* display: flex; */
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.taw-testimonial-thumb img {
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+}
+
+.taw-testimonial-body {
+	flex: 1;
+}
+
+.taw-testimonial-title {
+	font-size: 1.05rem;
+	font-weight: 600;
+	margin: 0 0 6px;
+}
+
+.taw-testimonial-content {
+	font-size: 0.95rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+/* Optional: small screen tweak */
+@media (max-width: 600px) {
+	.taw-testimonial-card {
+		flex-direction: row;
+	}
+}
